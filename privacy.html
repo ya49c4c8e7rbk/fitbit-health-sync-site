@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Fitbit Health Syncのプライバシーポリシー。Google Health APIのデータの取得、利用、保存、削除方法を説明します。">
+  <title>プライバシーポリシー | Fitbit Health Sync</title>
+  <style>
+    :root{color-scheme:light;--ink:#17324c;--muted:#526776;--line:#dce5ea;--accent:#186b75;--bg:#f6fafb}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);font-family:system-ui,-apple-system,"Hiragino Kaku Gothic ProN","Noto Sans JP",sans-serif;line-height:1.8;color:var(--ink)}
+    header,main,footer{max-width:800px;margin:auto;padding:26px 24px}header{display:flex;justify-content:space-between;align-items:center;gap:16px}
+    main{background:white;border:1px solid var(--line);border-radius:18px;padding:34px;margin-bottom:34px}
+    a{color:var(--accent)}a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+    h1{font-size:clamp(1.7rem,4vw,2.25rem);line-height:1.3}h2{font-size:1.2rem;margin-top:30px}
+    p,li{color:var(--muted)}ul{padding-left:1.5rem}small{color:var(--muted)}footer{border-top:1px solid var(--line);font-size:.9rem}
+  </style>
+</head>
+<body>
+  <header><strong>Fitbit Health Sync</strong><nav><a href="./">ホームへ戻る</a></nav></header>
+  <main>
+    <h1>プライバシーポリシー</h1>
+    <p><small>最終更新：2026年10月29日</small></p>
+    <p>Fitbit Health Sync（以下「本ツール」）は、所有者本人が自身のGoogle Healthデータを確認・分析するために作成した、個人用・非商用のツールです。本ポリシーは、現在のローカル検証版における取り扱いを説明します。</p>
+    <h2>1. 取得する情報</h2>
+    <p>GoogleのOAuth認証により、本人が同意したGoogle Health APIの<strong>睡眠データの読み取り専用権限</strong>を使用します。対象には睡眠の開始・終了日時、実睡眠時間、睡眠ステージ、関連する集計情報が含まれます。現在、他の健康データへの権限は要求していません。</p>
+    <h2>2. 利用目的</h2>
+    <p>睡眠時間・就寝時刻・睡眠ステージ等の傾向を把握し、本人の生活習慣の振り返りに役立てることだけに使用します。広告、プロファイリング広告、第三者への販売には使用しません。医療診断は行いません。</p>
+    <h2>3. 保存方法と保護</h2>
+    <p>現在の検証版は所有者のMac上で実行します。OAuth認証情報はローカルの制限付きファイルに保管します。睡眠データはAPIから取得してローカルで集計し、公開サイトや公開GitHubリポジトリには保存しません。Googleとの通信にはHTTPSを使用します。</p>
+    <h2>4. 共有・外部サービス</h2>
+    <p>本ツールはGoogle Health APIから本人のデータを受け取ります。現在、健康データを外部のクラウドDB、ChatGPT、広告事業者へ自動転送する機能は実装していません。本人が集計結果を別サービスに手動で共有する場合は、その共有先の規約等が適用されます。今後、自動転送やクラウド保存を導入する前には本ポリシーを更新し、必要な同意・安全対策を確認します。</p>
+    <h2>5. 保存期間・削除・アクセス権の取り消し</h2>
+    <p>現在の認証情報は、所有者がローカルファイルを削除するまで保持されます。ローカルに保存されたデータがある場合は、所有者がそのファイルを削除できます。また、Googleアカウントの「第三者との接続」等の設定から本ツールのアクセス許可を取り消せます。アクセス権を取り消しても、既存のローカルファイルが自動削除されるわけではありません。</p>
+    <h2>6. 本サイトについて</h2>
+    <p>本サイトはツールの説明と本ポリシーを公開する静的ページです。サイト独自の分析タグ、広告、Cookie、健康データ入力フォームは設置していません。ホスティング提供者による標準的なアクセスログの処理については、提供者のプライバシーポリシーが適用されます。</p>
+    <h2>7. 連絡先・変更</h2>
+    <p>このツールに関する一般的な問い合わせは、<a href="https://github.com/ya49c4c8e7rbk/fitbit-health-sync-site/issues">公開GitHub Issues</a>で受け付けます。個人情報や健康データ、認証情報はIssueに投稿しないでください。OAuth同意画面に表示されるサポートメールも利用できます。本ポリシーは実装変更に応じて更新します。</p>
+    <h2 lang="en">English summary</h2>
+    <p lang="en">Fitbit Health Sync is a private, non-commercial tool for the owner's own sleep analysis. It requests read-only Google Health sleep data, processes it locally on the owner's Mac, and does not currently auto-upload health data to cloud storage or ChatGPT. The owner can revoke OAuth access through Google Account settings and delete local files. Any future cloud synchronization will require an updated privacy notice and appropriate safeguards.</p>
+    <p><a href="./">ホームに戻る</a></p>
+  </main>
+  <footer>Fitbit Health Sync · 個人利用のための情報公開</footer>
+</body>
+</html>
