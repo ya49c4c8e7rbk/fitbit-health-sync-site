@@ -1,53 +1,23 @@
 <!doctype html>
-<html lang="ja">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Fitbit Health Sync は、本人が許可したGoogle Health APIの睡眠データを個人利用のために確認・分析する非商用ツールです。">
-  <title>Fitbit Health Sync | 個人用健康データ分析ツール</title>
-  <style>
-    :root{color-scheme:light;--ink:#17324c;--muted:#566978;--line:#dce5ea;--accent:#186b75;--bg:#f6fafb}
-    *{box-sizing:border-box}body{margin:0;background:var(--bg);font-family:system-ui,-apple-system,"Hiragino Kaku Gothic ProN","Noto Sans JP",sans-serif;line-height:1.75;color:var(--ink)}
-    header,main,footer{max-width:800px;margin:auto;padding:28px 24px}
-    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
-    .brand{font-weight:800;letter-spacing:.02em}nav a{margin-left:14px}
-    a{color:var(--accent)}a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
-    .hero{background:white;border:1px solid var(--line);border-radius:18px;padding:36px 30px}
-    .eyebrow{font-size:.87rem;font-weight:700;color:var(--accent)}
-    h1{font-size:clamp(1.9rem,5vw,2.9rem);line-height:1.35;margin:10px 0 16px}
-    h2{font-size:1.3rem;margin:34px 0 12px}p,li{color:var(--muted)}
-    ul{padding-left:1.5rem}.note{border-left:4px solid var(--accent);padding:9px 16px;background:#e9f4f3}
-    footer{border-top:1px solid var(--line);font-size:.9rem;color:var(--muted)}
-  </style>
-</head>
-<body>
-  <header><div class="brand">Fitbit Health Sync</div><nav aria-label="ページ"><a href="./">ホーム</a><a href="./privacy.html">プライバシー</a></nav></header>
-  <main>
-    <section class="hero">
-      <div class="eyebrow">PRIVATE • NON-COMMERCIAL</div>
-      <h1>健康データを、自分の生活改善に。</h1>
-      <p>Fitbit Health Sync は、所有者本人が許可した Google Health API のデータを取得・分析するための個人用・非商用ツールです。</p>
-      <p>現在は、睡眠記録の読み取りと、睡眠時間・就寝時刻・睡眠ステージの傾向確認を目的としています。一般ユーザー向けサービスや健康診断サービスではありません。</p>
-    </section>
-    <section aria-labelledby="purpose"><h2 id="purpose">利用目的と機能</h2>
-      <ul>
-        <li>Google Health APIから、本人が許可した睡眠データを読み取る</li>
-        <li>睡眠時間・睡眠ステージ・就寝時刻などの推移を個人利用で集計する</li>
-        <li>将来的な定期同期やAI分析は検証中であり、現時点では提供していない</li>
-      </ul>
-    </section>
-    <section aria-labelledby="data"><h2 id="data">アクセスするデータ</h2>
-      <p>現在要求する権限は睡眠データの読み取り専用（<code>googlehealth.sleep.readonly</code>）です。睡眠の開始・終了日時、睡眠時間、睡眠ステージなどを利用します。Google Health内のデータ変更・削除は行いません。</p>
-    </section>
-    <section aria-labelledby="privacy"><h2 id="privacy">データの取り扱い</h2>
-      <p>現在の検証では、認証情報は所有者のMac内に保存し、取得したデータはローカルで処理します。健康データや認証情報をこの公開サイト・GitHubリポジトリに掲載しません。</p>
-      <p><strong><a href="./privacy.html">プライバシーポリシーを読む</a></strong></p>
-    </section>
-    <div class="note"><p>このツールは個人の傾向確認が目的です。医療上の診断や治療判断には使用しません。</p></div>
-    <section aria-labelledby="english"><h2 id="english" lang="en">English summary</h2>
-      <p lang="en">Fitbit Health Sync is a private, non-commercial tool for its owner's personal sleep-data analysis. It requests read-only Google Health sleep access. The current prototype processes data locally, not on this public website. See the <a href="./privacy.html">privacy policy</a> for details.</p>
-    </section>
-  </main>
-  <footer>Fitbit Health Sync · 個人用プロジェクト · <a href="./privacy.html">プライバシーポリシー</a></footer>
-</body>
-</html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Google Health APIから本人が許可したデータを読み取り、個人の健康記録を安全に整理・分析する非商用ツールです。"><title>Personal Health Sync | 個人用健康データ分析ツール</title><style>:root{color-scheme:light;--bg:#f5f8fa;--ink:#183247;--muted:#526977;--link:#116c79;--line:#d9e5e9;--paper:#fff}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Hiragino Kaku Gothic ProN","Noto Sans JP",sans-serif;line-height:1.78}a{color:var(--link)}a:focus-visible{outline:3px solid var(--link);outline-offset:3px}header,main,footer{max-width:860px;margin:0 auto;padding:25px 22px}header{display:flex;justify-content:space-between;align-items:center;gap:12px}header strong{font-weight:800}nav{display:flex;gap:14px;flex-wrap:wrap;font-size:.9rem}main{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:34px;margin-bottom:28px}h1{font-size:clamp(1.7rem,4vw,2.5rem);line-height:1.4;margin:0 0 16px}h2{font-size:1.24rem;margin:30px 0 10px}p,li{color:var(--muted)}ul{padding-left:1.5rem}.eyebrow{font-size:.83rem;letter-spacing:.05em;color:var(--link);font-weight:750}.note{border-left:4px solid var(--link);padding:8px 18px;background:#f0f7f7;margin:24px 0}footer{border-top:1px solid var(--line);font-size:.87rem;color:var(--muted)}@media(max-width:580px){header{align-items:flex-start;flex-direction:column}main{border-radius:12px;padding:25px 20px}}</style></head><body><header><strong>Personal Health Sync</strong><nav aria-label="ページ"><a href="./">ホーム</a><a href="./privacy.html">プライバシーポリシー</a><a href="./terms.html">利用規約</a></nav></header>
+<main>
+<p class="eyebrow">PRIVATE · NON-COMMERCIAL · OWNER ONLY</p>
+<h1>自分の健康データを、生活の振り返りに。</h1>
+<p>Personal Health Sync（開発プロジェクト名：Fitbit Health Sync）は、本人が明示的に許可したGoogle Healthの記録を読み取り、睡眠・体組成などの傾向を個人的に分析するための非商用ツールです。一般向けにアカウント登録を提供するサービスではありません。</p>
+<h2>できること・開発中の機能</h2>
+<ul>
+<li>Google OAuthの同意を得て、Google Health APIから許可範囲内のデータを読み取る</li>
+<li>睡眠セッション、睡眠時間、体重、体脂肪率などの記録を整理する</li>
+<li>許可されたデータを個人用の保護されたデータベースに保存し、履歴や推移を確認する</li>
+<li>定期同期や追加の健康指標への対応は検証段階。Productionの自動同期は現在無効です（2026年11月2日時点）</li>
+</ul>
+<h2>データとアクセス権限</h2>
+<p>Google Healthの読み取り専用スコープ（睡眠、活動・フィットネス、健康測定値）を扱う設計です。実際のアクセスはGoogleの同意画面で認めた範囲に限られ、Google Health内のデータを変更・削除することはありません。取得・保存・削除と外部委託先についてはプライバシーポリシーを参照してください。</p>
+<h2>安全性と公開状況</h2>
+<p>認証済みの所有者のみが操作する構成で、クラウド処理にはVercel、プライベートデータの保管にはSupabaseを利用します。検証環境ではデータの保存・読み取りをテストしており、Productionでの自動同期は安全性確認後に判断します。健康データや認証情報を公開Webページ・公開GitHubリポジトリに掲載しません。</p>
+<div class="note"><p>このツールは自己管理の参考情報を提供するもので、医療上の診断、治療、緊急時の判断には使用できません。</p></div>
+<h2>ポリシーと問い合わせ</h2>
+<p>利用前に<a href="./privacy.html">プライバシーポリシー</a>と<a href="./terms.html">利用規約</a>をご確認ください。一般的な問い合わせは<a href="https://github.com/ya49c4c8e7rbk/fitbit-health-sync-site/issues">公開GitHub Issues</a>で受け付けています。健康情報・パスワード・認証トークンは投稿しないでください。</p>
+<h2 lang="en">English summary</h2>
+<p lang="en">Personal Health Sync is a private, non-commercial, single-owner tool for reviewing personal Google Health records. It may securely store authorized health readings in a private Supabase database through Vercel server functions. Automatic Production synchronization is not yet enabled. See the <a href="./privacy.html">privacy policy</a> and <a href="./terms.html">terms of use</a>.</p>
+</main><footer>Personal Health Sync · 個人用・非商用プロジェクト · Google、Fitbitの公式サービスではありません。</footer></body></html>
